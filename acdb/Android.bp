@@ -7,6 +7,7 @@ cc_library_shared {
 
     cflags: [
         "-D_ANDROID_",
+        "-Wno-address-of-packed-member",
     ],
 
     srcs: [
@@ -54,6 +55,7 @@ cc_library_shared {
         "-DAR_ATS_USE_CUTILS",
         "-DATS_USES_DUMMY_DIAG",
         "-DMCS_ENABLED",
+        "-Wno-address-of-packed-member",
     ],
 
     srcs: [
